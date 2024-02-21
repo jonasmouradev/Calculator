@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input id="display" readonly />
+      <div class="elements">
+        <button onclick="attachToDisplay('7')" class="values">7</button>
+        <button onclick="attachToDisplay('8')" class="values">8</button>
+        <button onclick="attachToDisplay('9')" class="values">9</button>
+        <button onclick="attachToDisplay('*')" class="operator">*</button>
+        <button onclick="attachToDisplay('4')" class="values">4</button>
+        <button onclick="attachToDisplay('5')" class="values">5</button>
+        <button onclick="attachToDisplay('6')" class="values">6</button>
+        <button onclick="attachToDisplay('/')" class="operator">/</button>
+        <button onclick="attachToDisplay('1')" class="values">1</button>
+        <button onclick="attachToDisplay('2')" class="values">2</button>
+        <button onclick="attachToDisplay('3')" class="values">3</button>
+        <button onclick="attachToDisplay('-')" class="operator">-</button>
+        <button onclick="attachToDisplay('.')">.</button>
+        <button onclick="attachToDisplay('0')">0</button>
+        <button onclick="clear()" class="operator">C</button>
+        <button onclick="attachToDisplay('+')" class="operator">+</button>
+        <button class="fakeBtn"></button>
+        <button class="fakeBtn"></button>
+        <button class="fakeBtn"></button>
+        <button onclick="equal">=</button>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
