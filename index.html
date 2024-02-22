@@ -7,29 +7,31 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="calculator">
-      <input id="display" readonly />
-      <div class="elements">
+    <div id="calculator">
+      <input id="display" value="0" readonly />
+      <div id="elements">
         <button onclick="attachToDisplay('7')" class="values">7</button>
         <button onclick="attachToDisplay('8')" class="values">8</button>
         <button onclick="attachToDisplay('9')" class="values">9</button>
-        <button onclick="attachToDisplay('*')" class="operator">*</button>
+        <button onclick="attachToDisplay('/')" id="operator" class="operator">
+          /
+        </button>
         <button onclick="attachToDisplay('4')" class="values">4</button>
         <button onclick="attachToDisplay('5')" class="values">5</button>
         <button onclick="attachToDisplay('6')" class="values">6</button>
-        <button onclick="attachToDisplay('/')" class="operator">/</button>
+        <button onclick="attachToDisplay('*')" class="operator">*</button>
         <button onclick="attachToDisplay('1')" class="values">1</button>
         <button onclick="attachToDisplay('2')" class="values">2</button>
         <button onclick="attachToDisplay('3')" class="values">3</button>
         <button onclick="attachToDisplay('-')" class="operator">-</button>
-        <button onclick="attachToDisplay('.')">.</button>
-        <button onclick="attachToDisplay('0')">0</button>
-        <button onclick="clear()" class="operator">C</button>
+        <button onclick="attachToDisplay('.')" class="values">.</button>
+        <button onclick="attachToDisplay('0')" class="values">0</button>
+        <button onclick="clearDisplay()" class="operator">C</button>
         <button onclick="attachToDisplay('+')" class="operator">+</button>
         <button class="fakeBtn"></button>
         <button class="fakeBtn"></button>
         <button class="fakeBtn"></button>
-        <button onclick="equal">=</button>
+        <button onclick="equal()" class="values">=</button>
       </div>
     </div>
 
